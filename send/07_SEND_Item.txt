@@ -109,7 +109,7 @@
 
 			[Field: SEND_item_group]
 				
-				Set as: $parent
+				Set as: if $$SysName:Primary = $Parent then "All Item Groups" else $parent
 				JSONTag: "item_group"
 
 			[Field: SEND_gst_hsn_code]

@@ -150,6 +150,7 @@
 				
 				Set as: If @@CMPStateName = $LedStateName then "In-State" else "Out-State"
 				JSONTag : "tax_category"
+				Invisible: Yes
 
 ;			[Field: SEND_Supplier_default_currency]
 ;				
@@ -160,6 +161,7 @@
 				
 				Set as: "PUR"
 				JSONTag : "default_price_list"
+				Invisible: Yes
 
 			[Field: SEND_Supplier_add1]
 
@@ -190,6 +192,7 @@
 
 				Set as: $$GetGSTStateCode:$LedstateName
 				JSONTag : "state_code"
+				Invisible: Yes
 
 			[Field: SEND_Supplier_country]
 

@@ -19,6 +19,7 @@
 			Case: Normal
 			Storage: ERPNextNamingSeries
 			
+
 	[System: UDF]
 		
 		ERPNextNamingSeries : String: 33588
