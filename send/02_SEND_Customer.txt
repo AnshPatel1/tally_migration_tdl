@@ -96,7 +96,7 @@
 			Field: SEND_company
 
 ;			Explode: SEND_Customer_item_group_limit
-			Explode: SEND_Customer_accounts
+;			Explode: SEND_Customer_accounts
 
 			JSONTag: "data"
 			Empty: $$Line > @@RecordsLimit

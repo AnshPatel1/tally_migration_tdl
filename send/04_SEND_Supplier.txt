@@ -96,7 +96,7 @@
 			Field: SEND_company
 
 			JSONTag: "data"
-			Explode: SEND_Customer_accounts
+;			Explode: SEND_Customer_accounts
 			Empty: $$Line > @@RecordsLimit
 			
 			Local: Line: SEND_Customer_accounts : Local: Field: SEND_CA_account: Set as: "Creditors" + " - " + @@EnableERPNextCmpAbbr
