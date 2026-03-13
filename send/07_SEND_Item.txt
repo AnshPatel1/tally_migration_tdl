@@ -114,11 +114,10 @@
 
 			[Field: SEND_gst_hsn_code]
 				
-				Set as	 : @HSNCode
+				Set as	 : if $$IsEmpty:@HSNCode then $item_gst_hsncode else @HSNCode
 				HSNCode  : $(GSTCLASSIFICATION, @GSTClassification).GSTDetails[Last].HSNCode
 				JSONTag: "gst_hsn_code"
 				GSTClassification : if $$IsEmpty:($Classification_Name:StockItem:$Name) then $Classification_Name:StockGroup:$Parent else $Classification_Name:StockItem:$Name
-				Invisible: Not @@IsGSTOn
 				
 			[Field: SEND_is_nil_exempt]
 				
