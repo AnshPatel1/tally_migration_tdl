@@ -101,9 +101,9 @@
 			
 			Local: Line: SEND_Customer_accounts : Local: Field: SEND_CA_account: Set as: "Creditors" + " - " + @@EnableERPNextCmpAbbr
 			
-			[Field: SEND_Supplier_code]
+			[Field: SEND_Customer_code]
 				
-				Set as: $LedgerCode
+				Set as: if $$IsEmpty:$LedgerCode then $Name else $LedgerCode
 				JSONTag: "customer_code"
 
 			[Field: SEND_Supplier_name]

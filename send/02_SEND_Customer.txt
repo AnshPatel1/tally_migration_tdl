@@ -106,7 +106,7 @@
 
 			[Field: SEND_Customer_code]
 				
-				Set as: $LedgerCode
+				Set as: if $$IsEmpty:$LedgerCode then $Name else $LedgerCode
 				JSONTag: "customer_code"
 				
 			[Field: SEND_Customer_name]
